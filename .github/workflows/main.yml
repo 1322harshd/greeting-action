@@ -11,9 +11,10 @@ jobs:
         - name: Checkout Code
           uses: actions/checkout@v6.1.0
         - name: calling custome action yml
+          id: greet_action
           uses: ./
           with: 
             username: harsh
+        
         - name: Using Action output
-          run: echo "Action says- ${{ steps.greet.outputs.message }}"
-      
+          run: echo "Action says- ${{ steps.greet_action.outputs.message }}"
