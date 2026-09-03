@@ -57,6 +57,6 @@ jobs:
                 fi
 
                 echo "Next tag = $NEXT_TAG"
-                ECHO "next=$NEXT_TAG" >> $GITHUB_OUTPUT
+                echo "next=$NEXT_TAG" >> $GITHUB_OUTPUT
 
         
